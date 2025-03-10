@@ -164,36 +164,14 @@ button:hover{
 
 }
 
-/* .languages {
-    display: flex;
-    gap: 7px;
-    margin-bottom: 32px;
-}
 
-.languges__items>.luguage__btn{
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-    font-family: 'TT Lakes Regular';
-    color: rgba(27, 28, 33, 1);
-    font-weight: bold;
-    transition: opacity 0.5s linear;
-    box-shadow: none;
-
-
-}
-
-.languges__items> .luguage__btn:focus {
-    opacity: 0.5;
-}
- */
  .languages__items {
     display: flex;
     gap: 7px;
   }
   
   .languages__radio {
-    /* Скрываем оригинальные радио-кнопки */
+   
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -201,23 +179,20 @@ button:hover{
   
   .languages__btn {
     padding: 8px 12px;
-    /* background: #f0f0f0; */
-    /* border: 1px solid #ccc; */
-    /* border-radius: 4px; */
+ 
     cursor: pointer;
     transition: all 0.3s;
   }
   
-  /* Стиль активной кнопки */
   .languages__radio:checked + .languages__btn {
-    /* background: #007bff; */
+   
     color: #7e7e82;;
-    /* border-color: #007bff; */
+    
   }
   
   
   
   .languages__radio:focus + .languages__btn {
-    /* outline: 2px solid #007bff; */
+    
     outline-offset: 2px;
   }
