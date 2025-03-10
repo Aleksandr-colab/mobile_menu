@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes Regular';
+    width: 320px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+a,button,img,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a,button{
+    cursor: pointer;
+    color: black;
+}
+.container{
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+
+.header {
+    padding-top: 18px;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-box__closed{
+    width: 40px;
+    height: 40px;
+    background-image: url("mobile_menu/burger.svg");
+    background-size: 34px; 
+    background-position: center; 
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear; 
+  }
+  .header-box__closed:hover {
+    box-shadow: 2px 3px 30px 3px rgba(255, 62, 121, 1);
+  }
+  
+
+.header-box__left-btn {
+    display: flex;
+    align-items: center;
+    gap:17px;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 62, 121, 1);
+    border-radius: 50%;
+    border: none;
+    transition: all 0.5s linear; 
+}
+button:hover{
+    box-shadow: 2px 3px 30px 3px rgba(255, 62, 121, 1);
+}
+
+
+
+
+.main {
+    padding-top: 47px;
+    margin-bottom: 268px;
+
+}
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    
+}
+.nav__href{
+    font-size: 16px;
+    transition: color 0.5s linear;
+    
+    position: relative;
+    color: #1b1c21;
+}
+.nav__href:hover {
+    color: grey;
+    
+}
+
+.nav__href:focus::before{
+    content: '';
+    position: absolute;
+    opacity: 1;
+    width: 4px;
+    height: 32px;
+    background-color: rgba(65, 246, 215, 1);
+    left: -24px;
+    top: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.footer {
+    padding-bottom: 32px;
+
+}
+
+.footer__btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.contacts__email {
+    font-size: 16px;
+    color: rgba(27, 28, 33, 1);
+
+
+}
+.contacts__tel {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(27, 28, 33, 1);
+
+
+}
+
+/* .languages {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 32px;
+}
+
+.languges__items>.luguage__btn{
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    font-family: 'TT Lakes Regular';
+    color: rgba(27, 28, 33, 1);
+    font-weight: bold;
+    transition: opacity 0.5s linear;
+    box-shadow: none;
+
+
+}
+
+.languges__items> .luguage__btn:focus {
+    opacity: 0.5;
+}
+ */
+ .languages__items {
+    display: flex;
+    gap: 7px;
+  }
+  
+  .languages__radio {
+    /* Скрываем оригинальные радио-кнопки */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .languages__btn {
+    padding: 8px 12px;
+    /* background: #f0f0f0; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  /* Стиль активной кнопки */
+  .languages__radio:checked + .languages__btn {
+    /* background: #007bff; */
+    color: #7e7e82;;
+    /* border-color: #007bff; */
+  }
+  
+  
+  
+  .languages__radio:focus + .languages__btn {
+    /* outline: 2px solid #007bff; */
+    outline-offset: 2px;
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile_menu_style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-box">
+        <div class="header-box__left-btn">
+          <button class="header-box__closed"></button>
+
+          <div class="header-box__left-logo">
+            <a href="#" class="header-box__link"
+              ><img src="mobile_menu/Group.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+        <div class="header-box__right">
+          <button class="header-box__search">
+            <img src="mobile_menu/search.svg" alt="search" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main container">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a href="#" class="nav__href">Ремонт техники</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Услуги и сервисы</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Корпоративным клиентам</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Продавцам техники</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Партнерам</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Производителям</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Наши сервисные центры</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__href">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <footer class="footer container">
+      <div class="footer__btns">
+        <button class="footer__btn">
+          <img src="mobile_menu/cal.svg" alt="call" />
+        </button>
+        <button class="footer__btn">
+          <img src="mobile_menu/chat.svg" alt="chat" />
+        </button>
+        <button class="footer__btn">
+          <img src="mobile_menu/profile.svg" alt="profile" />
+        </button>
+      </div>
+      <div class="contacts">
+        <a href="mailto:mail@cps.com" class="contacts__email">mail@cps.com</a>
+        <a href="tel:8 800 890 8900" class="contacts__tel">8 800 890 8900</a>
+      </div>
+      <!-- <div class="languages">
+        <div class="languges__items">
+          <button class="luguage__btn">RU</button>
+          <button class="luguage__btn">EN</button>
+          <button class="luguage__btn">CH</button>
+        </div>
+      </div> -->
+      <div class="languages">
+        <div class="languages__items">
+          <input
+            type="radio"
+            name="language"
+            id="lang-ru"
+            class="languages__radio"
+          />
+          <label for="lang-ru" class="languages__btn">RU</label>
+
+          <input
+            type="radio"
+            name="language"
+            id="lang-en"
+            class="languages__radio"
+          />
+          <label for="lang-en" class="languages__btn">EN</label>
+
+          <input
+            type="radio"
+            name="language"
+            id="lang-ch"
+            class="languages__radio"
+          />
+          <label for="lang-ch" class="languages__btn">CH</label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
